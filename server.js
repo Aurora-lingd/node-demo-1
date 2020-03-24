@@ -19,7 +19,7 @@ var server = http.createServer(function (request, response) {
 
     /******** 从这里开始看，上面不要看 ************/
 
-    console.log('path:' + path);
+    console.log('有个傻子发请求过来啦！路径（带查询参数）为：' + pathWithQuery);
     if (path === '/') {
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
